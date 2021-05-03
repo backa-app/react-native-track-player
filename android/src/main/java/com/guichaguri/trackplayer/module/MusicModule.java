@@ -37,6 +37,11 @@ public class MusicModule extends ReactContextBaseJavaModule implements ServiceCo
         super(reactContext);
     }
 
+    @Override    
+    public boolean canOverrideExistingModule() {        
+        return true;    
+    }
+
     @Override
     @Nonnull
     public String getName() {
